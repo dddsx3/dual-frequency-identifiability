@@ -1,0 +1,12 @@
+quantity,value,unit
+ka_band_files_on_machine,0,files
+cci_months,98,months
+cci_valid_cell_months,1657176,cell-months
+atl20_months,19,months
+overlap_months,14,months
+colocated_cell_months,172276,cell-months
+n_eff_total_rho03,927640.0,samples
+thick_cells_poleward_81p45_frac,0.4565,fraction
+SE_eta_sigma_diff_0.06m,0.00208,mm/(kg m-3)
+SE_eta_sigma_diff_0.15m,0.00519,mm/(kg m-3)
+SE_eta_sigma_diff_0.4m,0.01384,mm/(kg m-3)

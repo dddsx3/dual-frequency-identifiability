@@ -1,0 +1,166 @@
+{
+ "inventory": [
+  {
+   "dataset": "CCI CryoSat-2 (Ku)",
+   "path": "<WORKROOT>\\hard_innovation\\d2_first_principles\\data\\cci",
+   "n_files": 98
+  },
+  {
+   "dataset": "CCI Envisat (Ku)",
+   "path": "<WORKROOT>\\hard_innovation\\d2_first_principles\\data\\cci_sensors\\envisat",
+   "n_files": 27
+  },
+  {
+   "dataset": "CCI ERS-2 (Ku)",
+   "path": "<WORKROOT>\\hard_innovation\\d2_first_principles\\data\\cci_sensors\\ers2",
+   "n_files": 11
+  },
+  {
+   "dataset": "CCI Sentinel-3A (Ku)",
+   "path": "<WORKROOT>\\hard_innovation\\d2_first_principles\\data\\cci_sensors\\sentinel3a",
+   "n_files": 46
+  },
+  {
+   "dataset": "CCI Sentinel-3B (Ku)",
+   "path": "<WORKROOT>\\hard_innovation\\d2_first_principles\\data\\cci_sensors\\sentinel3b",
+   "n_files": 39
+  },
+  {
+   "dataset": "CS2SMOS v206 (Ku+SMOS)",
+   "path": "<WORKROOT>\\hard_innovation\\d2_first_principles\\data\\cs2smos",
+   "n_files": 1213
+  },
+  {
+   "dataset": "PIOMAS (model)",
+   "path": "<WORKROOT>\\hard_innovation\\d2_first_principles\\data\\piomas",
+   "n_files": 15
+  },
+  {
+   "dataset": "ICESat-2 ATL20 (laser)",
+   "path": "<DRIVE>\\icesat2\\atl20",
+   "n_files": 19
+  }
+ ],
+ "ka_hits": [],
+ "cci": {
+  "n_months": 98,
+  "first_month": "201010",
+  "last_month": "202404",
+  "valid_cell_months": 1657176,
+  "valid_cells_mean_per_month": 16909.95918367347,
+  "valid_cells_min_per_month": 7769,
+  "valid_cells_max_per_month": 20757,
+  "thick_cells_3p5_4p3_m": 16941,
+  "thick_cells_poleward_81p45_frac": 0.45652558880821675,
+  "ice_area_poleward_81p45_frac": 0.2402466605840297,
+  "lat_bands": {
+   "60-70": {
+    "n": 203635,
+    "mean_h_m": 0.8703493301590514,
+    "p90_h_m": 1.6347988843917851
+   },
+   "70-75": {
+    "n": 396563,
+    "mean_h_m": 1.054174758103975,
+    "p90_h_m": 1.7772623300552368
+   },
+   "75-80": {
+    "n": 442666,
+    "mean_h_m": 1.2239344909890468,
+    "p90_h_m": 2.0820322036743164
+   },
+   "80-82": {
+    "n": 158305,
+    "mean_h_m": 1.543312546798412,
+    "p90_h_m": 2.551664733886719
+   },
+   "82-88": {
+    "n": 352653,
+    "mean_h_m": 1.952445883476366,
+    "p90_h_m": 2.8402474880218507
+   }
+  }
+ },
+ "atl20": {
+  "available": true,
+  "n_months": 19,
+  "first_month": "201810",
+  "last_month": "202004",
+  "overlap_months": [
+   "201810",
+   "201811",
+   "201812",
+   "201901",
+   "201902",
+   "201903",
+   "201904",
+   "201910",
+   "201911",
+   "201912",
+   "202001",
+   "202002",
+   "202003",
+   "202004"
+  ],
+  "n_overlap_months": 14,
+  "colocated_cell_months": 172276,
+  "colocated_cells_per_month": 12305.42857142857,
+  "n_eff_per_cell_rho03": 5.384615384615384,
+  "n_eff_total": 927639.9999999999,
+  "per_month": {
+   "201810": 5640,
+   "201811": 10984,
+   "201812": 12686,
+   "201901": 13991,
+   "201902": 13283,
+   "201903": 13943,
+   "201904": 13448,
+   "201910": 6714,
+   "201911": 10801,
+   "201912": 13106,
+   "202001": 14320,
+   "202002": 14262,
+   "202003": 14868,
+   "202004": 14230
+  }
+ },
+ "thresholds_mm_per_kgm3": {
+  "10pct_low": 0.159,
+  "10pct_high": 0.375,
+  "50pct_low": 0.854,
+  "50pct_high": 1.858
+ },
+ "eta_resolution": [
+  {
+   "sigma_diff_m": 0.06,
+   "SE_eta_mm_per_kgm3": 0.002076539812532324,
+   "MDE_2p8016sigma_mm_per_kgm3": 0.005817633938790559,
+   "threshold_over_MDE_low10pct": 27.330698643623297,
+   "threshold_over_MDE_high50pct": 319.37382440158547
+  },
+  {
+   "sigma_diff_m": 0.15,
+   "SE_eta_mm_per_kgm3": 0.0051913495313308106,
+   "MDE_2p8016sigma_mm_per_kgm3": 0.0145440848469764,
+   "threshold_over_MDE_low10pct": 10.932279457449319,
+   "threshold_over_MDE_high50pct": 127.74952976063418
+  },
+  {
+   "sigma_diff_m": 0.4,
+   "SE_eta_mm_per_kgm3": 0.013843598750215496,
+   "MDE_2p8016sigma_mm_per_kgm3": 0.038784226258603734,
+   "threshold_over_MDE_low10pct": 4.0996047965434945,
+   "threshold_over_MDE_high50pct": 47.906073660237816
+  }
+ ],
+ "verdict": {
+  "ka_band_files_on_machine": 0,
+  "ka_pair_possible": false,
+  "only_local_pair": "CryoSat-2 Ku x ICESat-2 ATL20 laser (not Ka)",
+  "altika_inclination_deg": 98.55,
+  "altika_max_lat_deg": 81.45,
+  "thick_state_cells_inaccessible_to_altika_frac": 0.45652558880821675,
+  "density_truth_available": false,
+  "verdict": "no empirical Ka-Ku anchor is constructible from local holdings; route = GMD methods for assessment of models"
+ }
+}

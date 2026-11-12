@@ -1,0 +1,61 @@
+geometry,kernel,domain,type,A,B,x,I_A,I_B,I_Ax,I_Bx,delta_A,delta_B,gap,positions
+GC1_3reg_12.5in_50btw,empirical,all,supermodularity,{},"{0.1,0.2}",{0.0},0.000000,1.223616,1.000000,1.576044,1.000000,0.352428,1.000000e+00,"A:[] B:[np.float64(12.5), np.float64(25.0)] x:0.0"
+GC1_3reg_12.5in_50btw,empirical,two_per_region,supermodularity,{},{1.0},{0.0},0.000000,1.000000,1.000000,1.702852,1.000000,0.702852,1.000000e+00,A:[] B:[np.float64(50.0)] x:0.0
+GC1_3reg_12.5in_50btw,empirical,one_per_region,supermodularity,{},"{1.0,2.0}",{0.0},0.000000,1.702852,1.000000,2.373292,1.000000,0.670440,1.000000e+00,"A:[] B:[np.float64(50.0), np.float64(100.0)] x:0.0"
+GC2_3reg_25in_75btw,empirical,all,supermodularity,{},"{0.1,0.2}",{0.0},0.000000,1.576044,1.000000,2.037818,1.000000,0.461774,1.000000e+00,"A:[] B:[np.float64(25.0), np.float64(50.0)] x:0.0"
+GC2_3reg_25in_75btw,empirical,two_per_region,supermodularity,{},{1.0},{0.0},0.000000,1.000000,1.000000,1.851852,1.000000,0.851852,1.000000e+00,A:[] B:[np.float64(75.0)] x:0.0
+GC2_3reg_25in_75btw,empirical,one_per_region,supermodularity,{},"{1.0,2.0}",{0.0},0.000000,1.851852,1.000000,2.714749,1.000000,0.862897,1.000000e+00,"A:[] B:[np.float64(75.0), np.float64(150.0)] x:0.0"
+GC3_4reg_10in_25btw,empirical,all,supermodularity,{},"{0.1,0.2}",{0.0},0.000000,1.171234,1.000000,1.413228,1.000000,0.241993,1.000000e+00,"A:[] B:[np.float64(10.0), np.float64(20.0)] x:0.0"
+GC3_4reg_10in_25btw,empirical,two_per_region,supermodularity,{},{1.0},{0.0},0.000000,1.000000,1.000000,1.576044,1.000000,0.576044,1.000000e+00,A:[] B:[np.float64(25.0)] x:0.0
+GC3_4reg_10in_25btw,empirical,one_per_region,supermodularity,{},"{1.0,2.0}",{0.0},0.000000,1.576044,1.000000,2.037818,1.000000,0.461774,1.000000e+00,"A:[] B:[np.float64(25.0), np.float64(50.0)] x:0.0"
+GC4_4reg_12.5in_50btw,empirical,all,supermodularity,{},"{0.1,0.2}",{0.0},0.000000,1.223616,1.000000,1.576044,1.000000,0.352428,1.000000e+00,"A:[] B:[np.float64(12.5), np.float64(25.0)] x:0.0"
+GC4_4reg_12.5in_50btw,empirical,two_per_region,supermodularity,{},{1.0},{0.0},0.000000,1.000000,1.000000,1.702852,1.000000,0.702852,1.000000e+00,A:[] B:[np.float64(50.0)] x:0.0
+GC4_4reg_12.5in_50btw,empirical,one_per_region,supermodularity,{},"{1.0,2.0}",{0.0},0.000000,1.702852,1.000000,2.373292,1.000000,0.670440,1.000000e+00,"A:[] B:[np.float64(50.0), np.float64(100.0)] x:0.0"
+GC5_3reg_5in_25btw,empirical,all,supermodularity,{},"{0.1,0.2}",{0.0},0.000000,1.078865,1.000000,1.171234,1.000000,0.092369,1.000000e+00,"A:[] B:[np.float64(5.0), np.float64(10.0)] x:0.0"
+GC5_3reg_5in_25btw,empirical,two_per_region,supermodularity,{},{1.0},{0.0},0.000000,1.000000,1.000000,1.576044,1.000000,0.576044,1.000000e+00,A:[] B:[np.float64(25.0)] x:0.0
+GC5_3reg_5in_25btw,empirical,one_per_region,supermodularity,{},"{1.0,2.0}",{0.0},0.000000,1.576044,1.000000,2.037818,1.000000,0.461774,1.000000e+00,"A:[] B:[np.float64(25.0), np.float64(50.0)] x:0.0"
+GC1_3reg_12.5in_50btw,pchip,all,supermodularity,{},"{0.1,0.2}",{0.0},0.000000,1.299136,1.000000,1.617471,1.000000,0.318335,1.000000e+00,"A:[] B:[np.float64(12.5), np.float64(25.0)] x:0.0"
+GC1_3reg_12.5in_50btw,pchip,two_per_region,supermodularity,{},{1.0},{0.0},0.000000,1.000000,1.000000,1.755093,1.000000,0.755093,1.000000e+00,A:[] B:[np.float64(50.0)] x:0.0
+GC1_3reg_12.5in_50btw,pchip,one_per_region,supermodularity,{},"{1.0,2.0}",{0.0},0.000000,1.755093,1.000000,2.479135,1.000000,0.724042,1.000000e+00,"A:[] B:[np.float64(50.0), np.float64(100.0)] x:0.0"
+GC2_3reg_25in_75btw,pchip,all,supermodularity,{},"{0.1,0.2}",{0.0},0.000000,1.576044,1.000000,2.074288,1.000000,0.498244,1.000000e+00,"A:[] B:[np.float64(25.0), np.float64(50.0)] x:0.0"
+GC2_3reg_25in_75btw,pchip,two_per_region,supermodularity,{},{1.0},{0.0},0.000000,1.000000,1.000000,1.851852,1.000000,0.851852,1.000000e+00,A:[] B:[np.float64(75.0)] x:0.0
+GC2_3reg_25in_75btw,pchip,one_per_region,supermodularity,{},"{1.0,2.0}",{0.0},0.000000,1.851852,1.000000,2.714749,1.000000,0.862897,1.000000e+00,"A:[] B:[np.float64(75.0), np.float64(150.0)] x:0.0"
+GC3_4reg_10in_25btw,pchip,all,supermodularity,{},"{0.1,0.2}",{0.0},0.000000,1.231190,1.000000,1.505155,1.000000,0.273965,1.000000e+00,"A:[] B:[np.float64(10.0), np.float64(20.0)] x:0.0"
+GC3_4reg_10in_25btw,pchip,two_per_region,supermodularity,{},{1.0},{0.0},0.000000,1.000000,1.000000,1.576044,1.000000,0.576044,1.000000e+00,A:[] B:[np.float64(25.0)] x:0.0
+GC3_4reg_10in_25btw,pchip,one_per_region,supermodularity,{},"{1.0,2.0}",{0.0},0.000000,1.576044,1.000000,2.074288,1.000000,0.498244,1.000000e+00,"A:[] B:[np.float64(25.0), np.float64(50.0)] x:0.0"
+GC4_4reg_12.5in_50btw,pchip,all,supermodularity,{},"{0.1,0.2}",{0.0},0.000000,1.299136,1.000000,1.617471,1.000000,0.318335,1.000000e+00,"A:[] B:[np.float64(12.5), np.float64(25.0)] x:0.0"
+GC4_4reg_12.5in_50btw,pchip,two_per_region,supermodularity,{},{1.0},{0.0},0.000000,1.000000,1.000000,1.755093,1.000000,0.755093,1.000000e+00,A:[] B:[np.float64(50.0)] x:0.0
+GC4_4reg_12.5in_50btw,pchip,one_per_region,supermodularity,{},"{1.0,2.0}",{0.0},0.000000,1.755093,1.000000,2.479135,1.000000,0.724042,1.000000e+00,"A:[] B:[np.float64(50.0), np.float64(100.0)] x:0.0"
+GC5_3reg_5in_25btw,pchip,all,supermodularity,{},"{0.1,0.2}",{0.0},0.000000,1.105517,1.000000,1.231266,1.000000,0.125749,1.000000e+00,"A:[] B:[np.float64(5.0), np.float64(10.0)] x:0.0"
+GC5_3reg_5in_25btw,pchip,two_per_region,supermodularity,{},{1.0},{0.0},0.000000,1.000000,1.000000,1.576044,1.000000,0.576044,1.000000e+00,A:[] B:[np.float64(25.0)] x:0.0
+GC5_3reg_5in_25btw,pchip,one_per_region,supermodularity,{},"{1.0,2.0}",{0.0},0.000000,1.576044,1.000000,2.074288,1.000000,0.498244,1.000000e+00,"A:[] B:[np.float64(25.0), np.float64(50.0)] x:0.0"
+GC1_3reg_12.5in_50btw,expnugget,all,supermodularity,{},"{0.1,0.2}",{0.0},0.000000,1.465990,1.000000,1.805400,1.000000,0.339410,1.000000e+00,"A:[] B:[np.float64(12.5), np.float64(25.0)] x:0.0"
+GC1_3reg_12.5in_50btw,expnugget,two_per_region,supermodularity,{},{1.0},{0.0},0.000000,1.000000,1.000000,1.744140,1.000000,0.744140,1.000000e+00,A:[] B:[np.float64(50.0)] x:0.0
+GC1_3reg_12.5in_50btw,expnugget,one_per_region,supermodularity,{},"{1.0,2.0}",{0.0},0.000000,1.744140,1.000000,2.455397,1.000000,0.711257,1.000000e+00,"A:[] B:[np.float64(50.0), np.float64(100.0)] x:0.0"
+GC2_3reg_25in_75btw,expnugget,all,supermodularity,{},"{0.1,0.2}",{0.0},0.000000,1.576044,1.000000,2.066615,1.000000,0.490571,1.000000e+00,"A:[] B:[np.float64(25.0), np.float64(50.0)] x:0.0"
+GC2_3reg_25in_75btw,expnugget,two_per_region,supermodularity,{},{1.0},{0.0},0.000000,1.000000,1.000000,1.851852,1.000000,0.851852,1.000000e+00,A:[] B:[np.float64(75.0)] x:0.0
+GC2_3reg_25in_75btw,expnugget,one_per_region,supermodularity,{},"{1.0,2.0}",{0.0},0.000000,1.851852,1.000000,2.692504,1.000000,0.840653,1.000000e+00,"A:[] B:[np.float64(75.0), np.float64(150.0)] x:0.0"
+GC3_4reg_10in_25btw,expnugget,all,supermodularity,{},"{0.1,0.2}",{0.0},0.000000,1.441924,1.000000,1.748391,1.000000,0.306467,1.000000e+00,"A:[] B:[np.float64(10.0), np.float64(20.0)] x:0.0"
+GC3_4reg_10in_25btw,expnugget,two_per_region,supermodularity,{},{1.0},{0.0},0.000000,1.000000,1.000000,1.576044,1.000000,0.576044,1.000000e+00,A:[] B:[np.float64(25.0)] x:0.0
+GC3_4reg_10in_25btw,expnugget,one_per_region,supermodularity,{},"{1.0,2.0}",{0.0},0.000000,1.576044,1.000000,2.066615,1.000000,0.490571,1.000000e+00,"A:[] B:[np.float64(25.0), np.float64(50.0)] x:0.0"
+GC4_4reg_12.5in_50btw,expnugget,all,supermodularity,{},"{0.1,0.2}",{0.0},0.000000,1.465990,1.000000,1.805400,1.000000,0.339410,1.000000e+00,"A:[] B:[np.float64(12.5), np.float64(25.0)] x:0.0"
+GC4_4reg_12.5in_50btw,expnugget,two_per_region,supermodularity,{},{1.0},{0.0},0.000000,1.000000,1.000000,1.744140,1.000000,0.744140,1.000000e+00,A:[] B:[np.float64(50.0)] x:0.0
+GC4_4reg_12.5in_50btw,expnugget,one_per_region,supermodularity,{},"{1.0,2.0}",{0.0},0.000000,1.744140,1.000000,2.455397,1.000000,0.711257,1.000000e+00,"A:[] B:[np.float64(50.0), np.float64(100.0)] x:0.0"
+GC5_3reg_5in_25btw,expnugget,all,supermodularity,{},"{0.1,0.2}",{0.0},0.000000,1.391851,1.000000,1.630797,1.000000,0.238946,1.000000e+00,"A:[] B:[np.float64(5.0), np.float64(10.0)] x:0.0"
+GC5_3reg_5in_25btw,expnugget,two_per_region,supermodularity,{},{1.0},{0.0},0.000000,1.000000,1.000000,1.576044,1.000000,0.576044,1.000000e+00,A:[] B:[np.float64(25.0)] x:0.0
+GC5_3reg_5in_25btw,expnugget,one_per_region,supermodularity,{},"{1.0,2.0}",{0.0},0.000000,1.576044,1.000000,2.066615,1.000000,0.490571,1.000000e+00,"A:[] B:[np.float64(25.0), np.float64(50.0)] x:0.0"
+GC1_3reg_12.5in_50btw,exp326,all,supermodularity,{},"{0.1,0.2}",{0.0},0.000000,1.019169,1.000000,1.038339,1.000000,0.019169,1.000000e+00,"A:[] B:[np.float64(12.5), np.float64(25.0)] x:0.0"
+GC1_3reg_12.5in_50btw,exp326,two_per_region,supermodularity,{},{1.0},{0.0},0.000000,1.000000,1.000000,1.076537,1.000000,0.076537,1.000000e+00,A:[] B:[np.float64(50.0)] x:0.0
+GC1_3reg_12.5in_50btw,exp326,one_per_region,supermodularity,{},"{1.0,2.0}",{0.0},0.000000,1.076537,1.000000,1.153074,1.000000,0.076537,1.000000e+00,"A:[] B:[np.float64(50.0), np.float64(100.0)] x:0.0"
+GC2_3reg_25in_75btw,exp326,all,supermodularity,{},"{0.1,0.2}",{0.0},0.000000,1.038325,1.000000,1.076650,1.000000,0.038325,1.000000e+00,"A:[] B:[np.float64(25.0), np.float64(50.0)] x:0.0"
+GC2_3reg_25in_75btw,exp326,two_per_region,supermodularity,{},{1.0},{0.0},0.000000,1.000000,1.000000,1.114526,1.000000,0.114526,1.000000e+00,A:[] B:[np.float64(75.0)] x:0.0
+GC2_3reg_25in_75btw,exp326,one_per_region,supermodularity,{},"{1.0,2.0}",{0.0},0.000000,1.114526,1.000000,1.229052,1.000000,0.114526,1.000000e+00,"A:[] B:[np.float64(75.0), np.float64(150.0)] x:0.0"
+GC3_4reg_10in_25btw,exp326,all,supermodularity,{},"{0.1,0.2}",{0.0},0.000000,1.015336,1.000000,1.030672,1.000000,0.015336,1.000000e+00,"A:[] B:[np.float64(10.0), np.float64(20.0)] x:0.0"
+GC3_4reg_10in_25btw,exp326,two_per_region,supermodularity,{},{1.0},{0.0},0.000000,1.000000,1.000000,1.038325,1.000000,0.038325,1.000000e+00,A:[] B:[np.float64(25.0)] x:0.0
+GC3_4reg_10in_25btw,exp326,one_per_region,supermodularity,{},"{1.0,2.0}",{0.0},0.000000,1.038325,1.000000,1.076650,1.000000,0.038325,1.000000e+00,"A:[] B:[np.float64(25.0), np.float64(50.0)] x:0.0"
+GC4_4reg_12.5in_50btw,exp326,all,supermodularity,{},"{0.1,0.2}",{0.0},0.000000,1.019169,1.000000,1.038339,1.000000,0.019169,1.000000e+00,"A:[] B:[np.float64(12.5), np.float64(25.0)] x:0.0"
+GC4_4reg_12.5in_50btw,exp326,two_per_region,supermodularity,{},{1.0},{0.0},0.000000,1.000000,1.000000,1.076537,1.000000,0.076537,1.000000e+00,A:[] B:[np.float64(50.0)] x:0.0
+GC4_4reg_12.5in_50btw,exp326,one_per_region,supermodularity,{},"{1.0,2.0}",{0.0},0.000000,1.076537,1.000000,1.153074,1.000000,0.076537,1.000000e+00,"A:[] B:[np.float64(50.0), np.float64(100.0)] x:0.0"
+GC5_3reg_5in_25btw,exp326,all,supermodularity,{},"{0.1,0.2}",{0.0},0.000000,1.007669,1.000000,1.015337,1.000000,0.007669,1.000000e+00,"A:[] B:[np.float64(5.0), np.float64(10.0)] x:0.0"
+GC5_3reg_5in_25btw,exp326,two_per_region,supermodularity,{},{1.0},{0.0},0.000000,1.000000,1.000000,1.038325,1.000000,0.038325,1.000000e+00,A:[] B:[np.float64(25.0)] x:0.0
+GC5_3reg_5in_25btw,exp326,one_per_region,supermodularity,{},"{1.0,2.0}",{0.0},0.000000,1.038325,1.000000,1.076650,1.000000,0.038325,1.000000e+00,"A:[] B:[np.float64(25.0), np.float64(50.0)] x:0.0"

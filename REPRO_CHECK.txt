@@ -1,0 +1,119 @@
+# Reproduction check — P5 dual-frequency identifiability paper
+
+Package: `p5_dual_freq_identifiability` (Advances in Space Research (ASR)
+submission, original research article; Elsevier `elsarticle`, author-year).
+All paths are relative to this directory. This file records how the package was
+last run and what it is expected to print.
+
+## 1. Environment
+
+| Item | Version used for the last run |
+|---|---|
+| Python | 3.13.14 (numpy, scipy, pandas, matplotlib) |
+| LaTeX | MiKTeX 24.1, `pdflatex`, `elsarticle` class |
+| BibTeX | `elsarticle-harv.bst` |
+
+`h5py` is needed only by `code/feasibility_anchor.py`, which also needs the
+read-only archive (Section 6). Nothing else reads an external file: the whole
+model is self-contained and deterministic, and `refs.bib` is committed, so the
+LaTeX build needs no network access.
+
+## 2. Run order
+
+```
+cd code
+python p5_numbers.py --check    # every table and number -> out/p5_*.csv (42 assertions)
+python submod_p5.py             # monotonicity/submodularity, 60 designs -> out/gls_*.csv, out/p5_witness.csv
+python make_figures.py          # figs/fig1..fig4 (.pdf and .png)
+python tests/test_p5_numbers.py # 12 unit tests of the claimed properties
+python check_package.py         # gate: assertions + number match + citations + figures + worked example
+```
+
+Then, in the package root:
+
+```
+pdflatex manuscript ; bibtex manuscript ; pdflatex manuscript ; pdflatex manuscript
+```
+
+`make_bib.py` is optional and needs network access: it rebuilds `refs.bib` from
+Crossref metadata for every DOI, so that a reference which does not exist cannot
+enter the bibliography. The committed `refs.bib` was produced that way.
+
+## 3. Expected output of the last run
+
+`p5_numbers.py --check` ends with `checks: 42/42 pass`, including
+
+| assertion | value |
+|---|---|
+| identity residual, 28 cells | 2.2e-16 m^2 |
+| Woodbury vs direct inversion | < 1.8e-15 m^2 |
+| ceiling equals ice share (both states) | 93.698 / 96.732 % |
+| snow branch unreachable at 10 % | true, both states |
+| width floor at n_eff = 10 | 1.178 m |
+
+`tests/test_p5_numbers.py` prints `all tests passed` (12 tests).
+`check_package.py` prints `all checks passed` and ends with the worked example:
+
+```
+[5] protocol applied to eta = 0.300 mm (kg m^-3)^-1, ku_ka_p50
+  low  reduction= 24.43 %  tier=boundary    10 % edge=0.119
+  high reduction= 10.04 %  tier=boundary    10 % edge=0.299
+```
+
+`manuscript.pdf` is 37 pages, 0 errors, 0 undefined references, 0 overfull boxes.
+
+## 4. Files and what produces them
+
+| artefact | producer | content |
+|---|---|---|
+| `out/p5_state.csv` | p5_numbers | calibrated states, both |
+| `out/p5_metrics.csv` | p5_numbers | Table 1 |
+| `out/p5_identity.csv` | p5_numbers | Table 1 check, Eq. (identity), 28 cells |
+| `out/p5_density_split.csv` | p5_numbers | ice/snow split of `a` |
+| `out/p5_directions.csv` | p5_numbers | Fig. 2 marginals vs the Ku-only cell |
+| `out/p5_response.csv` | p5_numbers | Fig. 3, both linkages, both states |
+| `out/p5_window.csv` | p5_numbers | Table 2, windows, plateaux, refraction |
+| `out/p5_appendix.csv` | p5_numbers | Appendix A: ceiling, eta_opt, Woodbury residual |
+| `out/p5_mission.csv` | p5_numbers | Table 4 |
+| `out/p5_width_floor.csv` | p5_numbers | Section 9, three-term width bound |
+| `out/p5_checks.csv` | p5_numbers | every assertion with pass/fail |
+| `out/gls_*.csv`, `out/p5_witness.csv` | submod_p5 | Section 8 and Fig. 4 |
+| `out/feasibility_anchor.{csv,json}` | feasibility_anchor | Section 5 data audit |
+| `out/meta.json` | make_bib | Crossref metadata cache behind `refs.bib` |
+| `literature/` | (search tools) | candidate pools and abstracts behind Section 5; provenance, not code |
+
+## 5. What changed in this revision
+
+The earlier version of this package reported a threshold of 0.159/0.375
+mm (kg m^-3)^-1 at 10 % and a width floor of 0.645--1.111 m. Those values came
+from three defects that this revision removes, and the record is kept here
+because a reader comparing versions will notice the change:
+
+1. the density term of the posterior variance was computed from
+   `1/(1' R^-1 1) + a`, which is valid only when density is the sole nuisance;
+   the correct first term uses the whole covariance minus the density group, and
+   the difference is up to 46 % of `sigma^2`;
+2. the sign of `dz/drho_i` was taken from the inverse map (`+h/Delta rho`)
+   instead of the forward map (`-h/Delta rho`), which inverted the helpful
+   direction of the differential sensitivity;
+3. the response was evaluated by inverting the full covariance at every `eta`
+   and the thresholds were read off a coarse grid, so the edges were not
+   reproducible from the archived code.
+
+Appendix A now contains the derivations, and `check_package.py` binds every
+headline number in the manuscript to the CSV cell that produced it.
+
+## 6. The one script that needs an archive
+
+`code/feasibility_anchor.py` audits the read-only holdings described in
+Section 5 (CCI L3C, CS2SMOS v206, ATL20 V005, IceBird, PIOMAS). Those holdings
+are not redistributed. To re-run it:
+
+```
+python feasibility_anchor.py --data-root /path/to/holdings --atl20 /path/to/atl20
+```
+
+It requires `h5py` and `netCDF4`. Its output for the holdings audited in the
+paper is committed as `out/feasibility_anchor.json`; the script itself does not
+carry a copy of any threshold, it reads them from `out/p5_window.csv`, because a
+hard-coded copy is how a superseded number survived into the earlier version.
